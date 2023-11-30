@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.balance h3 {
+    text-transform: uppercase;
+}
+.inc-exp-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+.income {
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #f4f4f4;
+}
+.income h3 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.income p {
+    font-size: 1.5rem;
+    color: green;
+}
+.expense {
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #f4f4f4;
+}
+.expense h3 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.expense p {
+    font-size: 1.5rem;
+    color: red;
+}
+.history ul {
+    list-style: none;
+}
+.history h3 {
+    margin-bottom: 5px;
+}
+.history ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.transaction-form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+}
+.add-transactions h3 {
+    margin-bottom: 5px;
+}
+label {
+    font: 600;
+}
+#submit-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #9C88FF;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn {
+    color: #ffffff;
+    background-color: #6974725e;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0px 5px;
+    border: none;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 34%;
+}
+.history ul li:hover {
+    .delete-btn {
+        display: block;
+    }
+}

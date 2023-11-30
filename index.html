@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Expense Tracker</h2>
+        </div>
+        <div class="balance">
+            <h3>Your Balance</h3>
+            <h1>$0.00</h1>
+        </div>
+        <div class="inc-exp-container">
+            <div class="income">
+                <h3>Income</h3>
+                <p>$8.00</p>
+            </div>
+            <div class="expense">
+                <h3>Expense</h3>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="history">
+            <ul id="list">
+                <h3>History</h3>
+                <hr/>
+                <li>
+                    <span>Salary</span>
+                    <span>$2000</span>
+                    <button class="delete-btn">X</button>
+                </li>
+                <li>
+                    <span>Bill</span>
+                    <span>$100</span>
+                    <button class="delete-btn">X</button>
+                </li>
+            </ul>
+        </div>
+        <div class="add-transactions">
+            <h3>Add new transaction</h3>
+            <hr/>
+            <form class="transaction-form">
+                <br/>
+                <label>Description<br/>
+                    <input type="text" name="description" id="description" placeholder="Enter Description...">
+                </label>
+                <label>Transaction Amount
+                    <p>(negative - expense, positive - income)</p>
+                    <input type="number" name="amount" id="amount" placeholder="Enter Amount...">
+                </label>
+                <button type="submit" id="submit-btn">Add Transaction</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
